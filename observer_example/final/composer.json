@@ -1,0 +1,15 @@
+{
+    "name": "piyuesh23/observer_example_final",
+    "authors": [
+        {
+            "name": "piyuesh23",
+            "email": "piyuesh23@qed42.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ObserverExample\\": "src/"
+        }
+    }
+}
