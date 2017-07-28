@@ -8,7 +8,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 $basePizza = new PlainPizza();
 $vegSupreme = new VegSupreme($basePizza);
-$peppyPaneer = new PeppyPaneer($basePizza);
+$peppyPaneer = new PeppyPaneer($vegSupreme);
 
 print 'Veg Supreme Ingredients are ' . $vegSupreme->getDescription() . PHP_EOL;
 print 'Veg Supreme Price ' . $vegSupreme->getPrice() . PHP_EOL;

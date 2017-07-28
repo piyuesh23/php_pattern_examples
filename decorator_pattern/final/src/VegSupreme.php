@@ -14,7 +14,7 @@ class VegSupreme extends ToppingDecorator {
    * @return string
    */
   public function getDescription () {
-    return $this->tempPizza->getDescription() . ' , Cheeze, Jalepeno, Olives, Onion, Tomatoes';
+    return $this->tempPizza->getDescription() . ', Cheeze, Jalepeno, Olives, Onion, Tomatoes';
   }
 
   /**
