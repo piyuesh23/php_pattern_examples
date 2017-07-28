@@ -1,8 +1,8 @@
 <?php
 
 use ObserverExample\Axelerant;
-use ObserverExample\Observer;
 use ObserverExample\Qed42;
+use ObserverExample\Subject;
 
 require __DIR__ . '/vendor/autoload.php';
 
@@ -12,14 +12,14 @@ $axelerant = new Axelerant('axelerant', 20.000);
 print 'QED42 Stock Price: ' .  $qed42->getPrice() . PHP_EOL;
 print 'Axelerant Stock Price: ' .  $axelerant->getPrice() . PHP_EOL;
 
-$observer = new Observer();
-$observer->registerSubject($qed42);
-$observer->registerSubject($axelerant);
+$subject = new Subject();
+$subject->registerObserver($qed42);
+$subject->registerObserver($axelerant);
 
-updatePrice($observer, 2);
+updatePrice($subject, 2);
 
-function updatePrice(Observer $observer, $multiplier) {
-  $observer->notify($multiplier);
+function updatePrice(Subject $subject, $multiplier) {
+  $subject->notify($multiplier);
 }
 
 print 'QED42 Stock Price: ' .  $qed42->getPrice() . PHP_EOL;

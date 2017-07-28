@@ -2,7 +2,7 @@
 
 namespace ObserverExample;
 
-class Observer {
+class Subject {
 
   protected $organizations;
 
@@ -16,14 +16,14 @@ class Observer {
   /**
    * @param \ObserverExample\Organization $subject
    */
-  public function registerSubject(Organization $subject) {
+  public function registerObserver(Organization $subject) {
     $this->organizations[$subject->id()] = $subject;
   }
 
   /**
    * @param \ObserverExample\Organization $subject
    */
-  public function unRegisterSubject(Organization $subject) {
+  public function unRegisterObserver(Organization $subject) {
     unset($this->organizations[$subject->id()]);
   }
 
