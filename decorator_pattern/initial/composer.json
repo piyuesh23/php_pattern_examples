@@ -1,0 +1,15 @@
+{
+    "name": "piyuesh23/decorator_example_initial",
+    "authors": [
+        {
+            "name": "piyuesh23",
+            "email": "piyuesh23@qed42.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "DecoratorPattern\\": "src/"
+        }
+    }
+}
