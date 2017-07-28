@@ -10,8 +10,4 @@ class AwsFileUpload {
   public function uploadFile($fileName) {
     print_r("Uploading file " . $fileName . " successful." . PHP_EOL);
   }
-
-//  public function upload($fileName) {
-//    print_r("Uploading file " . $fileName . " successful." . PHP_EOL);
-//  }
 }
