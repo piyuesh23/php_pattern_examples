@@ -1,15 +1,15 @@
 <?php
 
-namespace FactoryExample
+namespace FactoryExample;
 
 /**
  * Shapes factory.
  */
 class Phone {
 
-  protected $type = 'Normal Phone';
+  protected $type = "Normal Phone";
 
   public function __construct() {
-    print_r($this->type . ' has been created');
+    print_r($this->type . ' has been created' . PHP_EOL);
   }
 }
