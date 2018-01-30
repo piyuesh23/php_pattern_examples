@@ -1,9 +1,9 @@
 <?php
 
-namespace FactoryExample
+namespace FactoryExample;
 
 use FactoryExample\Phone;
 
-class SelfiePhone extends MobilePhone {
+class SelfiePhone extends Phone {
   protected $type = 'Selfie Phone';
 }

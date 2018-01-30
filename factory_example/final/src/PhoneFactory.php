@@ -1,10 +1,11 @@
 <?php
 
-namespace FactoryExample
+namespace FactoryExample;
 
 use FactoryExample\Phone;
 use FactoryExample\CameraPhone;
 use FactoryExample\SelfiePhone;
+use Exception;
 
 class PhoneFactory {
 
@@ -17,10 +18,9 @@ class PhoneFactory {
       throw new Exception('Invalid Phone Type.');
     }
     else {
-      $className = $type.'Phone';
-      // Assuming Class files are already loaded using autoload concept
-      if (class_exists($className)) {
-        return new $className();
+      $classExists = '\FactoryExample\\'.$type.'Phone';
+      if (class_exists($classExists)) {
+        return new $classExists();
       }
       else {
         throw new Exception('Phone type not found.');
