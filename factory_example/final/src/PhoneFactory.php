@@ -18,9 +18,9 @@ class PhoneFactory {
       throw new Exception('Invalid Phone Type.');
     }
     else {
-      $classExists = '\FactoryExample\\'.$type.'Phone';
-      if (class_exists($classExists)) {
-        return new $classExists();
+      $class_name = '\FactoryExample\\'.$type.'Phone';
+      if (class_exists($class_name)) {
+        return new $class_name();
       }
       else {
         throw new Exception('Phone type not found.');
