@@ -6,5 +6,7 @@
             "email": "dipakmdhrm@gmail.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {"FactoryExample\\": "src"}
+    }
 }

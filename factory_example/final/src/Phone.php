@@ -1,12 +1,11 @@
 <?php
 
-namespace FactoryExample
+namespace FactoryExample;
 
 /**
  * Shapes factory.
  */
 class Phone {
-
   protected $type = 'Normal Phone';
 
   public function __construct() {
