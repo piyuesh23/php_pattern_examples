@@ -1,0 +1,15 @@
+{
+    "name": "jaykandari/factorydemo",
+    "authors": [
+        {
+            "name": "Jaideep Singh Kandari",
+            "email": "jaideepskandari@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "FactoryDemo\\": "src/"
+        }
+    }
+}
