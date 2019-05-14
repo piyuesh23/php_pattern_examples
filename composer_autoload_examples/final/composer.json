@@ -1,0 +1,15 @@
+{
+    "name": "piyuesh23/composer_autoload_examples",
+    "authors": [
+        {
+            "name": "Piyuesh Kumar",
+            "email": "piyuesh23@qed42.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ComposerAutoload\\": "src"
+        }
+    }
+}
